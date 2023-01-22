@@ -1,0 +1,26 @@
+{
+  "name": "team-scratch-apis",
+  "version": "1.0.0",
+  "description": "team Scratch apis",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moses-yabo/team-scratch.git"
+  },
+  "keywords": [
+    "MoseLi\u001b[D\u001b[D\u001b[-li"
+  ],
+  "author": "Lindile Yabo",
+  "bugs": {
+    "url": "https://github.com/moses-yabo/team-scratch/issues"
+  },
+  "homepage": "https://github.com/moses-yabo/team-scratch#readme",
+  "devDependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "nodemon": "^2.0.20"
+  }
+}
