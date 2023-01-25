@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const convoSchhema = mongoose.Schema({
+const convoSchema = mongoose.Schema({
   _id: {
     type: mongoose.Types.ObjectId,
   },
@@ -27,3 +27,4 @@ const convoSchhema = mongoose.Schema({
     required: [true, "agent name is undefined"],
   },
 });
+exports.convo = mongoose.model("dialogue", convoSchema);

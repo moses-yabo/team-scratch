@@ -1,0 +1,5 @@
+{
+    "db": "mongodb://localhost:27017",
+    "amathubaJwtPrivateKey": "amathuba_collective_jwtPrivateKey",
+    "amathubaJwtExpiresIn": "90d"
+}
