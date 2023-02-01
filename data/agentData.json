@@ -1,11 +1,35 @@
-{
-    "status": "failed",
-    "data": {
-        "name": "lindile",
-        "surnname": "lindile",
-        "clanname": "lindile",
-        "hoename": "lindile",
-        "names": "lindile"
-    },
-    "result": "none of you business"
-}
+[
+    {
+        "dialogue": {
+            "nameOfAgent": "",
+            "nameOfYouth": "",
+            "sessionId": "",
+            "date": ""
+        },
+        "psychosocialSupport": {
+            "temp": "",
+            "openingQuestion": "",
+            "possibleReplies": "",
+            "possibleResponseAgent": "",
+            "basedOnPossibleResp": {
+                "followUpQtn": "",
+                "prompt": ""
+            },
+            "basedOnPossibleResponse": "",
+            "basedOnPossibleReplies": {
+                "followUpQtn": "",
+                "prompt": ""
+            },
+            "YouthReflection": {
+                "possibleResponse": "",
+                "followUpQtn": "",
+                "prompt": ""
+            },
+            "agentReflection": {
+                "openingQtn": "",
+                "response": ""
+            },
+            "redFlage": true
+        }
+    }
+]

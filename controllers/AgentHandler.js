@@ -1,23 +1,48 @@
-const { readFileSync } = require("fs");
-const User = require("../models/userModel");
+const fs = require("fs");
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const userModel = require("../models/userModel");
+const youthModel = require("../models/youthModel");
+const convoModel = require("../models/convoModel");
 
+const agentData = fs.readFile(
+  `${__dirname}../../data/agentData.json`,
+  "utf-8",
+  (err, data) => {
+    if (err) return "error";
+    console.log("what thr heck", data);
+  }
+);
+
+console.log("?", agentData);
+// get a specific youth 'GET'
 module.exports.getYouth = async (req, res, next) => {
-  const youthId = req.param(["_id"]);
   res.status(200).json({
     status: "success   yay! ",
     result: youth.length,
     data: {
-      youth,
+      agentData,
     },
   });
 };
-module.exports.chatYouth = async (req, res) => {
+
+//get all youth 'GET'
+module.exports.getAllYouth = async (req, res, next) => {
+  res.status(200).json({
+    status: "success   yay! ",
+    result: youth.length,
+    data: {
+      agentData,
+    },
+  });
+};
+
+//create convo post create new conversation 'POST'
+module.exports.createConvo = async (req, res) => {
   const body = req.body;
   const convo = {
-    sessionId: body.sessionId,
     session: {
+      sessionId: body.sessionId,
       agentName: body.agentName,
       youthName: body.youthName,
       date: body.date,
@@ -38,7 +63,8 @@ module.exports.chatYouth = async (req, res) => {
     data: youth,
   });
 };
-module.exports.addYouth = async (req, res) => {
+//Create Youth 'POST'
+module.exports.createYouth = async (req, res) => {
   const youth = [];
   res.status(201).json({
     status: " Post ran Successfully youth Added",
@@ -46,12 +72,13 @@ module.exports.addYouth = async (req, res) => {
     data: youth,
   });
 };
-module.exports.getAllYouth = async (req, res) => {
-  res.send("Aweya ndithe gqi kwa control");
-};
+
+//UPDATE YOUTH PUT OBJECT
 module.exports.UpdateYouth = async (req, res) => {
   res.send("Aweya ndithe gqi kwa control");
 };
+
+//DELETE YOUTH 'DELETE'
 module.exports.deleteYouth = async (req, res) => {
   res.send("Aweya ndithe gqi kwa control");
 };

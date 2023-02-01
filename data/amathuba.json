@@ -1,0 +1,84 @@
+[
+    {
+        "openingQuestion1Red": "",
+        "openingQuestion2Red": "",
+        "openingQuestion1Blue": "",
+        "openingQuestion2Blue": "",
+        "keyAnswer1": "",
+        "keyAnswer2": "",
+        "keyAnswer3": "",
+        "keyAnswer4": "",
+        "keyAnswer5": "",
+        "keyAnswer6": "",
+        "keyAnswer7": "",
+        "keyAnswer8": "",
+        "keyAnswer9": "",
+        "keyAnswer10": "",
+        "keyAnswer11": "",
+        "keyAnswer12": "",
+        "keyAnswer13": "",
+        "keyAnswer14": ""
+    },
+    {
+        "emotionOfCall": ""
+    },
+    {
+        "ROQpossibleResponse": "",
+        "BOQpossibleResponse": ""
+    },
+    {
+        "roqFollowUpQuestion": "",
+        "boqFollowUpQuestion": "",
+        "keyAnswer1": "",
+        "keyAnswer2": "",
+        "keyAnswer3": "",
+        "keyAnswer4": "",
+        "keyAnswer5": "",
+        "keyAnswer6": "",
+        "keyAnswer7": "",
+        "keyAnswer8": "",
+        "keyAnswer9": "",
+        "keyAnswer10": "",
+        "keyAnswer11": "",
+        "keyAnswer12": "",
+        "keyAnswer13": "",
+        "keyAnswer14": ""
+    },
+    {
+        "roqPromptQuestion": "",
+        "boqPromptQuestion": "",
+        "keyAnswer1": "",
+        "keyAnswer2": "",
+        "keyAnswer3": "",
+        "keyAnswer4": "",
+        "keyAnswer5": "",
+        "keyAnswer6": "",
+        "keyAnswer7": "",
+        "keyAnswer8": "",
+        "keyAnswer9": "",
+        "keyAnswer10": "",
+        "keyAnswer11": "",
+        "keyAnswer12": "",
+        "keyAnswer13": "",
+        "keyAnswer14": ""
+    },
+    {
+        "youthOQ1": false,
+        "youthOQ2": false
+    },
+    {
+        "youthResponses": ""
+    },
+    {
+        "youthFollow_UpQuestions": ""
+    },
+    {
+        "youthPrompt_Questions": ""
+    },
+    {
+        "agentQuestions": ""
+    },
+    {
+        "newAppointment": false
+    }
+]

@@ -1,30 +1,68 @@
 const mongoose = require("mongoose");
 
 const convoSchema = mongoose.Schema({
-  _id: {
-    type: mongoose.Types.ObjectId,
+  dialogue: {
+    nameOfAgent: {
+      type: String,
+    },
+    nameOfYouth: {
+      type: String,
+    },
+    sessionId: {
+      type: mongoose.Types.ObjectId,
+    },
+    date: {
+      type: Date,
+      default: Date.now(),
+    },
   },
-  youthName: {
-    type: String,
-    required: [true, "youth name is undefined"],
-  },
-  agentName: {
-    type: String,
-    required: [true, "agent name is undefined"],
-  },
-  psychosocialExchange: {
-    type: Object,
-    required: [true, "agent name is undefined"],
-  },
-  callType: {
-    type: String,
-    min: 4,
-    max: 15,
-  },
-  date: {
-    type: Date,
-    default: Date.now(),
-    required: [true, "agent name is undefined"],
+  psychosocialSupport: {
+    temp: {
+      type: String,
+    },
+    openingQuestion: {
+      type: String,
+    },
+    possibleReplies: {
+      type: String,
+    },
+    possibleResponseAgent: {
+      type: String,
+    },
+    basedOnPossibleResp: {
+      followUpQtn: {
+        type: String,
+      },
+      prompt: {
+        type: String,
+      },
+    },
+    basedOnPossibleResponse: {
+      type: String,
+    },
+    basedOnPossibleReplies: {
+      followUpQtn: {
+        type: String,
+      },
+      prompt: {
+        type: String,
+      },
+    },
+    youthReflection: {
+      type: String,
+    },
+    agentReflection: {
+      possibleResponse: {
+        type: String,
+      },
+      followUpQtn: {
+        type: String,
+      },
+      prompt: {
+        type: String,
+      },
+    },
   },
 });
-exports.convo = mongoose.model("dialogue", convoSchema);
+
+module.exports.Convo = mongoose.model("dialogue", convoSchema);
