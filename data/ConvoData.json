@@ -1,0 +1,92 @@
+{
+    "psychosocialSupport": {
+        "temp": [
+            "😀",
+            "😁",
+            "😏",
+            "😣"
+        ],
+        "openingQuestion": [
+            "How are you feeling today?",
+            "How are things going at work/at home",
+            "How is your relationship with your family?",
+            "Youth Reflections"
+        ],
+        "possibleReplies": [
+            "Happy",
+            "Sad",
+            "Confused",
+            "Anxious",
+            "Angry"
+        ],
+        "possibleResponseAgent": [
+            "I am glad to hear that",
+            "I am sorry to hear that.",
+            "That is great.",
+            "That is unfortunate"
+        ],
+        "basedOnPossibleResp": {
+            "followUpQtn": [
+                "Would you like to say more?",
+                "What exactly do you mean when you say",
+                "Can you tell me a bit more",
+                "What"
+            ],
+            "prompt": [
+                "What makes you feel that way?",
+                "Is there something that happened that makes you feel…"
+            ]
+        },
+        "basedOnPossibleResponse": [
+            "That sounds Like You are doing well",
+            "That sounds Like You are struggling",
+            "That sounds Like You are going through a lot"
+        ],
+        "basedOnPossibleReplies": {
+            "followUpQtn": [
+                "Can you tell me a bit more",
+                "What happened?",
+                "How are you coping?"
+            ],
+            "prompt": [
+                "I am interested in what happened",
+                "I am really curious to find out more",
+                "That is a useful Technique .. / you are very resourceful",
+                "I have felt like that when ...",
+                "I understand , something similar happened to me ..."
+            ]
+        },
+        "youthReflection": [
+            "Earlier you said you ...",
+            "What I am hearing is ...",
+            "Last time you said ... What has happened since?"
+        ],
+        "agentReflection": {
+            "possibleResponse": [
+                "Can you  see How you have ... That is wonderful, don't you think?",
+                "I think you are very smart",
+                "I think you are very brave",
+                "I think you are very kind"
+            ],
+            "followUpQtn": [
+                "Would you like to say you have gained/ Learnt something",
+                "How do you feel about the way you acted there ? would you do it again",
+                "How do you feel About the Incident / Event that occured earlier on ? ",
+                "I think you are very kind"
+            ],
+            "prompt": [
+                "Do you think you will try something else next time?",
+                "How are you feeling now ?",
+                "What are you planning to do next?",
+                "How did you find this conversation",
+                "Would you say you you have gained /learnt something",
+                "   "
+            ]
+        },
+        "session": {
+            "sessionId": "",
+            "agentName": "",
+            "youthName": ""
+        }
+    }
+}

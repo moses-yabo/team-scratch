@@ -1,0 +1,5 @@
+{
+    "db": "mongodb+srv://amathuba:078043106078043@cluster1.0tcaf27.mongodb.net/amathuba",
+    "amathubaJwtPrivateKey": "amathuba_collective_jwtPrivateKey",
+    "amathubaJwtExpiresIn": "90d"
+}

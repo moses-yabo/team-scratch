@@ -1,0 +1,4 @@
+{
+    "amathubaJwtPrivateKey": "amathuba_collective_jwtPrivateKey",
+    "amathubaJwtExpiresIn": "90d"
+}
