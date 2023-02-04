@@ -1,4 +1,9 @@
-module.exports.getConversation = (req, res) => {
+module.exports.registerAgentLogic = (app) => {
+  app.get("/admin-convo", getConversation);
+  app.get("/all-admin-convo", getAllConversation);
+}
+
+const getConversation = (req, res) => {
   try {
     const currentAgent = Agents.find("_id", "name");
     res.status(200).json({
@@ -14,7 +19,8 @@ module.exports.getConversation = (req, res) => {
     }
   }
 };
-module.exports.getAllConversation = (req, res) => {
+
+const getAllConversation = (req, res) => {
   try {
     const currentAgent = Agents.find("_id", "name");
     res.writeHead({

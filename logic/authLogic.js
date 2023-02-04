@@ -2,11 +2,13 @@ const config = require("config");
 const jwt = require("jsonwebtoken");
 const User = require("../models/userModel");
 const AppError = require("../utils/appError");
+
 const signToken = (id) => {
   return jwt.sign({ id: id }, config.get("amathubaJwtPrivateKey"), {
     expiresIn: config.get("amathubaJwtExpiresIn"),
   });
 };
+
 exports.signup = async (req, res) => {
   const { firstName, lastName, email, password, role, passwordConfirm } =
     req.body;
@@ -20,7 +22,7 @@ exports.signup = async (req, res) => {
   });
   const token = signToken(newUser._id);
   res.status(201).json({
-    status: "succes",
+    status: "success",
     token,
     data: {
       user: newUser,
@@ -49,6 +51,7 @@ exports.login = async (req, res, next) => {
   });
   console.log(req.body);
 };
+
 exports.signout = async (req, res) => {
   const newUser = await User.create(req.body);
   res.status(201).json({

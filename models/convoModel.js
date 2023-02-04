@@ -1,6 +1,9 @@
 const mongoose = require("mongoose");
 
 const convoSchema = mongoose.Schema({
+  _id: {
+    type: mongoose.Types.ObjectId,
+  },
   dialogue: {
     nameOfAgent: {
       type: String,

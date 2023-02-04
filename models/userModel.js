@@ -2,6 +2,9 @@ const mongoose = require("mongoose");
 const validate = require("validator");
 const bcrypt = require("bcrypt");
 const userSchema = new mongoose.Schema({
+  _id: {
+    type: mongoose.Types.ObjectId,
+  },
   firstName: {
     type: String,
     required: [true, "Please tell us your firstName !"],

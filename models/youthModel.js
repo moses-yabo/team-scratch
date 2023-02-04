@@ -33,4 +33,4 @@ const youthSchema = mongoose.Schema({
   },
 });
 
-exports.youth = mongoose.model("Youth", youthSchema);
+module.exports = mongoose.model("Youth", youthSchema);

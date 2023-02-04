@@ -20,6 +20,7 @@
   "homepage": "https://github.com/moses-yabo/team-scratch#readme",
   "devDependencies": {
     "express": "^4.18.2",
+    "mongodb": "^5.0.0",
     "mongoose": "^6.8.4",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
