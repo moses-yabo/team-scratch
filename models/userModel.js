@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const validate = require("validator");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const userSchema = new mongoose.Schema({
   _id: {
     type: mongoose.Types.ObjectId,

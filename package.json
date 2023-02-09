@@ -2,9 +2,11 @@
   "name": "team-scratch-apis",
   "version": "1.0.0",
   "description": "team Scratch apis",
-  "main": "main.js",
   "scripts": {
-    "start": "nodemon app.js --w"
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "16.16.0"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
     "config": "^3.3.9",
     "cors": "^2.8.5",
     "joi": "^17.7.0",

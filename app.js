@@ -12,6 +12,10 @@ require("./db/db")();
 
 
 app.use(cors());
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    next();
+});
 app.use(express.json());
 
 app.post("/signup", authController.signup);
@@ -24,7 +28,7 @@ registerAgentLogic(app);
 registerQALogic(app);
 registerUserLogic(app);
 
-const port = process.env.PORT || 1998;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log("App running on port", port);
 });
