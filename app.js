@@ -13,7 +13,7 @@ require("./db/db")();
 
 app.use(cors());
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Origin", "https://github.com/moses-yabo/team-scratch.git");
     next();
 });
 app.use(express.json());
