@@ -13,7 +13,7 @@ require("./db/db")();
 
 app.use(cors());
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "https://amabe-env.eba-5iepkthj.us-east-1.elasticbeanstalk.com");
+    res.header("Access-Control-Allow-Origin", "https://amabe-env.eba-5iepkthj.us-east-1.elasticbeanstalk.com/login");
     next();
 });
 app.use(express.json());
