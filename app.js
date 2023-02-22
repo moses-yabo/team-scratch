@@ -13,7 +13,7 @@ require("./db/db")();
 
 app.use(cors());
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "amathuba-collective.live");
+    res.header("Access-Control-Allow-Origin", "https://www.amathuba-collective.live/");
     next();
 });
 app.use(express.json());
